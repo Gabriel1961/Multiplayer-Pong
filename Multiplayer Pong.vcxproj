@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{25fe696a-84a1-4279-a808-fac3ebb5016b}</ProjectGuid>
+    <RootNamespace>MultiplayerPong</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;GLEW_STATIC</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\websocketpp;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\asio;$(SolutionDir);$(SolutionDir)Dependencies\include\OpenGLWrapper;$(SolutionDir)Dependencies\include\GLFW</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions);_CRT_SECURE_NO_WARNINGS;GLEW_STATIC</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Dependencies\include\websocketpp;$(SolutionDir)Dependencies\include;$(SolutionDir)Dependencies\include\asio;$(SolutionDir);$(SolutionDir)Dependencies\include\OpenGLWrapper;$(SolutionDir)Dependencies\include\GLFW</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)Dependencies\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>glew32s.lib;glfw3.lib;opengl32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Multiplayer\Message.cpp" />
+    <ClCompile Include="Physics\Collider2D.cpp" />
+    <ClCompile Include="Pong\Ball.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\ComputeShader.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\DebugLine.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\IndexBuffer.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\Input\Input.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\Renderer.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\Shader.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\Texture.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\Text\Text.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\Transform.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imgui.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\vendor\imgui\ImguiLib.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imgui_demo.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imgui_draw.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imgui_impl_glfw.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imgui_impl_opengl3.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imgui_tables.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\vendor\irrXML\irrXML.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\vendor\stb_image\stb_image.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\VertexArray.cpp" />
+    <ClCompile Include="Dependencies\include\OpenGLWrapper\VertexBuffer.cpp" />
+    <ClCompile Include="Multiplayer\Client.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Pong\Paddle.cpp" />
+    <ClCompile Include="Pong\PongGame.cpp" />
+    <ClCompile Include="Menu\StartMenu.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Multiplayer\Message.h" />
+    <ClInclude Include="Physics\Collider2D.h" />
+    <ClInclude Include="Pong\Ball.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\Circle.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\Common.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\DebugLine.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\IndexBuffer.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\Input\Input.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\Logger.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\PixelDisplay.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\Quad.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\Renderer.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\Shader.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\Texture.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\Text\ImageFont.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\Text\Text.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\Transform.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\UniformBlockList.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imconfig.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imgui.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\imgui\ImguiLib.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imgui_impl_glfw.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imgui_impl_opengl3.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imgui_internal.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imstb_rectpack.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imstb_textedit.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\imgui\imstb_truetype.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\irrXML\CXMLReaderImpl.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\irrXML\fast_atof.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\irrXML\heapsort.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\irrXML\irrArray.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\irrXML\irrString.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\irrXML\irrTypes.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\irrXML\irrXML.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\vendor\stb_image\stb_image.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\VertexArray.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\VertexBuffer.h" />
+    <ClInclude Include="Dependencies\include\OpenGLWrapper\VertexBufferLayout.h" />
+    <ClInclude Include="Multiplayer\Client.h" />
+    <ClInclude Include="CommandLine.h" />
+    <ClInclude Include="IncludesAndDefines.h" />
+    <ClInclude Include="ExceptionLogger.h" />
+    <ClInclude Include="Pong\GameObject.h" />
+    <ClInclude Include="Pong\Paddle.h" />
+    <ClInclude Include="Pong\PongGame.h" />
+    <ClInclude Include="RenderLoop.h" />
+    <ClInclude Include="ScreenSize.h" />
+    <ClInclude Include="Menu\StartMenu.h" />
+    <ClInclude Include="WindowResize.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Dependencies\include\OpenGLWrapper\Line.shader" />
+    <None Include="Dependencies\include\OpenGLWrapper\PixelDisplay.shader" />
+    <None Include="Dependencies\include\OpenGLWrapper\Quad.shader" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Resources\trump.png">
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</DeploymentContent>
+    </Image>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
